@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"git.qasico.com/cuxs/common/log"
+	"github.com/alfatih/irhabi/irhabi/common/log"
 	"github.com/Sirupsen/logrus"
 )
 
