@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alfatih/irhabi/irhabi/common/log"
+	"github.com/alfatih/irhabi/common/log"
 	"github.com/Sirupsen/logrus"
 )
 
