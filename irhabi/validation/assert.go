@@ -1,7 +1,3 @@
-// Copyright 2016 PT. Qasico Teknologi Indonesia. All rights reserved.
-// Use of this source code is governed by a MIT style
-// license that can be found in the LICENSE file.
-
 package validation
 
 import (
@@ -14,7 +10,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"git.qasico.com/cuxs/common"
+	"github.com/alfatih/irhabi/common"
 )
 
 // IsNotEmpty returns true if value is not nill
