@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/irhabi/irhabi/common"
+	"github.com/alfatih/irhabi/irhabi/common"
 )
 
 // Output format response when running validations
