@@ -1,0 +1,8 @@
+package: git.qasico.com/cuxs/version
+import:
+- package: git.qasico.com/cuxs/env
+- package: gopkg.in/mgo.v2
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert

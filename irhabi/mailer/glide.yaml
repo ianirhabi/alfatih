@@ -1,0 +1,8 @@
+package: git.qasico.com/cuxs/mailer
+import:
+- package: git.qasico.com/cuxs/env
+- package: gopkg.in/alexcesaro/quotedprintable.v3
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert

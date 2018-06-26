@@ -1,0 +1,22 @@
+image: qasico/go:latest
+
+services:
+  - mongo:latest
+
+before_script:
+  - go version
+  - mkdir $GOPATH/src/git.qasico.com
+  - mkdir $GOPATH/src/git.qasico.com/cuxs
+  - WD="$GOPATH/src/git.qasico.com/cuxs/notify"
+
+variables:
+  MGO_HOST: mongo
+  MGO_DB: notify
+  MGO_NOTIFY_COLLECTION: notify_document
+  ONES_KEY: eaf26238-dd12-44ec-9b42-4e98972962b0
+
+test:
+  script:
+    - "cp -R $(pwd) $WD && cd $WD"
+    - glide install
+    - gotest

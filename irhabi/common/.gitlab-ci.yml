@@ -1,0 +1,13 @@
+image: qasico/go:latest
+
+before_script:
+  - go version
+  - mkdir $GOPATH/src/git.qasico.com
+  - mkdir $GOPATH/src/git.qasico.com/cuxs
+  - WD="$GOPATH/src/git.qasico.com/cuxs/common"
+
+test:
+  script:
+    - "cp -R $(pwd) $WD && cd $WD"
+    - glide install
+    - gotest

@@ -1,0 +1,8 @@
+package: git.qasico.com/cuxs/common
+import:
+- package: github.com/buger/jsonparser
+- package: github.com/labstack/echo
+- package: github.com/stretchr/testify
+- package: github.com/mgutz/ansi
+- package: github.com/Sirupsen/logrus
+  version: ~1.0.3

@@ -1,0 +1,3 @@
+package: git.qasico.com/cuxs/validation
+import:
+- package: git.qasico.com/cuxs/common

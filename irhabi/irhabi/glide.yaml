@@ -1,0 +1,22 @@
+package: git.qasico.com/cuxs/cuxs
+import:
+- package: git.qasico.com/cuxs/common
+  subpackages:
+  - log
+  - tester
+- package: git.qasico.com/cuxs/orm
+- package: git.qasico.com/cuxs/env
+- package: git.qasico.com/cuxs/validation
+- package: github.com/dgrijalva/jwt-go
+  version: ~3.0.0
+- package: github.com/go-sql-driver/mysql
+  version: ~1.3
+- package: github.com/labstack/echo
+  version: 3.2.1
+  subpackages:
+  - middleware
+testImport:
+- package: github.com/stretchr/testify
+  version: ~1.1.4
+  subpackages:
+  - assert
