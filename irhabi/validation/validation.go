@@ -6,7 +6,7 @@ import (
 
 	"time"
 
-	"github.com/alfatih/irhabi/irhabi/common"
+	"github.com/alfatih/irhabi/common"
 )
 
 type (
