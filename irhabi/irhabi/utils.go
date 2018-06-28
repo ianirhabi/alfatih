@@ -61,7 +61,7 @@ func listRoutes(e *echo.Echo) {
 	sort.Sort(sortByPath(routes))
 	for _, v := range routes {
 		if v.Path[len(v.Path)-1:] != "*" {
-			log.Debug("%-10s | %-50s | %-54s", v.Method, v.Path, filepath.Base(v.Handler))
+			log.Debug("%-10s | %-50s | %-54s", v.Method, v.Path, filepath.Base(v.Name))
 		}
 	}
 	log.Debug("%0120v", "")
