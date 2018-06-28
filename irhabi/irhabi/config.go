@@ -36,10 +36,10 @@ func loadConfig() *config {
 	c.DebugMode = env.GetBool("APP_DEBUGMODE", true)
 	c.JwtSecret = env.GetString("APP_JWT_SECRET", "V3ryF*ck1ngS3cur3")
 	c.GzipEnable = env.GetBool("APP_GZIP", false)
-	c.Host = env.GetString("SERVER_HOST", "0.0.0.0:9090")
+	c.Host = env.GetString("SERVER_HOST", "0.0.0.0:8500")
 	c.DbEngine = env.GetString("DB_ENGINE", "mysql")
 	c.DbHost = env.GetString("DB_HOST", "0.0.0.0:3306")
-	c.DbName = env.GetString("DB_NAME", "konektifa_app")
+	//c.DbName = env.GetString("DB_NAME", "konektifa_app")
 	c.DbUser = env.GetString("DB_USER", "root")
 	c.DbPassword = env.GetString("DB_PASS", "")
 
